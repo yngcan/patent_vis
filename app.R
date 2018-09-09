@@ -17,18 +17,14 @@ library(magrittr) # for %<>% function
 library(tools) # For tolower() and toTitleCase()
 library(DT) # Customizable table outputs
 
-# For local use
-# Needs to be commented out on server
-setwd("/Users/psimm/Google Drive/Patent App")
-
 # Load order matters
-source("R/settings.R")
-source("R/string_constants.R")
-source("R/load_data.R")
-source("R/functions.R")
-source("R/sidebar.R")
-source("R/body.R")
-source("R/ui.R")
-source("R/server.R")
+source("settings.R")
+source("string_constants.R")
+source("load_data.R")
+source("functions.R")
+source("sidebar.R")
+source("body.R")
+source("ui.R")
+source("server.R")
 
 shinyApp(ui, server)
